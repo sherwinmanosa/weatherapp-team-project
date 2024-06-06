@@ -37,6 +37,22 @@
   }
 }
 
+.chart--btn--show {
+  color: #ff6b08;
+  margin-bottom: 8px;
+  font-family: Lato;
+  padding-right: 14px;
+  font-size: 14px;
+  line-height: 22px;
+  color: #ff6b08;
+  text-transform: capitalize;
+  text-align: center;
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
 .chart--btn {
   width: 28px;
   height: 28px;
