@@ -1,0 +1,151 @@
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.more-info {
+  font-family: 'Lato';
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: 320px) {
+    width: 100%;
+
+    padding-bottom: 20px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 580px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 1180px;
+  }
+
+  &_scroll {
+    @media screen and (min-width: 320px) {
+      display: none;
+    }
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+    }
+    @media screen and (min-width: 1280px) {
+      display: none;
+    }
+  }
+}
+
+.more-info__list {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  list-style: none;
+  display: flex;
+  overflow-x: auto;
+  padding-bottom: 20px;
+
+  &::-webkit-scrollbar {
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #ff6b08;
+  }
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1280px) {
+    justify-content: space-evenly;
+  }
+}
+
+.is-hidden {
+  display: none;
+}
+.time-weather {
+  margin: 0;
+  padding: 10px 16px;
+  list-style: none;
+  min-width: 120px;
+  height: 220px;
+  font-size: 14px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.54);
+  border: 1px solid rgba(255, 255, 255, 0.54);
+  border-radius: 25px;
+  margin-right: 13px;
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 0;
+  }
+  @media screen and (min-width: 768px) {
+    min-width: 120px;
+    margin-right: 16px;
+  }
+  @media screen and (min-width: 1280px) {
+    min-width: 120px;
+    height: 217px;
+    padding: 18px 10px 20px 10px;
+  }
+  &:last-child {
+    margin-right: 0px;
+  }
+  &__icon-pressure {
+    width: 20px;
+    height: 20px;
+    background-image: url('../images/barometer.png');
+    margin-right: 10px;
+    background-repeat: no-repeat;
+  }
+  &__icon-humidity {
+    width: 20px;
+    height: 20px;
+    background-image: url('../images/humidity.png');
+    margin-right: 10px;
+    background-repeat: no-repeat;
+  }
+  &__icon-wind {
+    width: 20px;
+    height: 20px;
+    background-image: url('../images/wind.png');
+    margin-right: 10px;
+    background-repeat: no-repeat;
+  }
+  &__data {
+    text-align: left;
+    list-style: none;
+    padding: 0;
+  }
+  &__time {
+    font-size: 14px;
+    line-height: 1.21;
+    margin-bottom: 8px;
+  }
+  &__temp {
+    font-size: 18px;
+    color: #ff6b08;
+    line-height: 1.222;
+    margin-bottom: 8px;
+    &-icon {
+      display: block;
+      margin: 0 auto;
+      width: 35px;
+      height: 35px;
+    }
+  }
+
+  &__pressure {
+    display: flex;
+    margin-bottom: 4px;
+    align-items: center;
+  }
+  &__humidity {
+    display: flex;
+    margin-bottom: 4px;
+    align-items: center;
+  }
+  &__wind {
+    display: flex;
+    align-items: center;
+  }
+}

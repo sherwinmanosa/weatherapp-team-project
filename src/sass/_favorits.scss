@@ -1,0 +1,128 @@
+.seach-favorites {
+  position: absolute;
+  z-index: 2;
+  top: 13px;
+  right: 20px;
+}
+.seach-location {
+  position: absolute;
+  z-index: 2;
+  top: 13px;
+  left: 20px;
+}
+.seach-favorite {
+  margin-top: 16px;
+  margin-right: auto;
+  margin-left: auto;
+
+  width: 100%;
+  display: flex;
+  height: 28px;
+
+  @media screen and (min-width: 768px) {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 768px;
+    width: 100%;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-right: auto;
+    margin-left: auto;
+    width: 822px;
+    height: 28px;
+  }
+}
+
+.seach-favorite-list {
+  display: flex;
+  padding-left: 0px;
+  margin-right: 10px;
+  margin-left: 31px;
+}
+
+.seach-favorite-item {
+  min-width: 74px;
+  height: 28px;
+  display: flex;
+  background: rgba(16, 33, 54, 0.5);
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.seach-favorite-link {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  text-decoration-line: underline;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.close-btn {
+  margin-left: 10px;
+  background-image: url(../img/closebtn.svg);
+  width: 10px;
+  height: 10px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.seach-favorite-item {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.back-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  background: rgba(255, 255, 255, 0.2);
+
+  border-radius: 50%;
+  margin-left: 10px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+  text-decoration-line: none;
+  transform: rotate(180deg);
+}
+
+.frw-btn {
+  display: flex;
+  width: 28px;
+  height: 28px;
+  background: rgba(255, 255, 255, 0.2);
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+  text-decoration-line: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
